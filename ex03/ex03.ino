@@ -1,6 +1,5 @@
-// ex03: 非阻塞 SOS 信号灯 (millis() 实现, 无delay)
-// 标准摩斯码：S(三短) + O(三长) + S(三短)
-const int LED_PIN = 2;  // 板载LED
+
+const int LED_PIN = 4; 
 
 // 时间参数 (毫秒)
 const unsigned long SHORT = 200;    // 短亮
