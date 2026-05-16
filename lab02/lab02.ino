@@ -1,5 +1,5 @@
 
-const int ledPin = 2;
+const int ledPin = 4;
 
 void setup() {
 
@@ -14,11 +14,11 @@ void loop() {
   delay(2000);
 }
 
-// 发送SOS信号函数：三短、三长、三短
+
 void sendSOS() {
   // 字母S：短闪3次
   for (int i = 0; i < 3; i++) {
-    digitalWrite(ledPin, HIGH);  // 点亮LED
+    digitalWrite(ledPin, HIGH);  
     delay(200);                   // 短亮200ms
     digitalWrite(ledPin, LOW);   // 熄灭LED
     delay(200);                   // 短灭200ms
