@@ -1,5 +1,4 @@
-// ex02: 使用millis()实现LED 1Hz稳定闪烁
-// 功能：LED以1秒亮、1秒灭的频率循环闪烁，不使用delay()阻塞
+
 const int ledPin = 2;          // 板载LED引脚
 unsigned long previousMillis = 0;  // 记录上一次状态切换的时间
 const long interval = 1000;     // 闪烁间隔1000ms（1Hz）
