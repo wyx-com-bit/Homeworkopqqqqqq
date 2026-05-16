@@ -2,11 +2,11 @@
 const int LED_PIN = 4; 
 
 // 时间参数 (毫秒)
-const unsigned long SHORT = 200;    // 短亮
-const unsigned long LONG = 600;     // 长亮
-const unsigned long INTERVAL = 200; // 间隔
-const unsigned long LETTER = 500;   // 字母间隔
-const unsigned long END = 2000;     // 一轮结束间隔
+const unsigned long SHORT = 200;   
+const unsigned long LONG = 600;    
+const unsigned long INTERVAL = 200; 
+const unsigned long LETTER = 500;   
+const unsigned long END = 2000;    
 
 unsigned long lastTime = 0;
 int step = 0;
@@ -32,7 +32,6 @@ void handleSOS(unsigned long now) {
   if (step > 17) step = 0; // 循环播放
 }
 
-// 获取每一步的延时时间
 unsigned long getDelay(int s) {
   switch(s) {
     case 0: return SHORT;   // 短亮
