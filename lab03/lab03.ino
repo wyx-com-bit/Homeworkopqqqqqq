@@ -1,8 +1,7 @@
-// 定义LED引脚
 const int ledPin = 2;  
 
-// 设置PWM属性
-const int freq = 5000;          // 频率 5000Hz
+
+const int freq = 4000;          // 频率 5000Hz
 const int resolution = 8;       // 分辨率 8位 (0-255)
 
 void setup() {
