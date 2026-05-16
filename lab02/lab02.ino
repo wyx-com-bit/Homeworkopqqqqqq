@@ -1,8 +1,8 @@
-// 定义LED引脚，Arduino板载LED通常是13号引脚
+
 const int ledPin = 2;
 
 void setup() {
-  // 设置LED引脚为输出模式
+
   pinMode(ledPin, OUTPUT);
 }
 
