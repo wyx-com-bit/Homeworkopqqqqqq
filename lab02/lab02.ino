@@ -4,16 +4,16 @@ const int ledPin = 4;
 void setup() {
 
   Serial.begin(115200);
-  // 将LED引脚设置为输出模式
+
   pinMode(ledPin, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(ledPin, HIGH);  // 点亮LED
-  Serial.println("LED ON");    // 串口输出提示
-  delay(1000);                 // 保持1秒（1000毫秒）
+  digitalWrite(ledPin, HIGH);  
+  Serial.println("LED ON");    
+  delay(100);                 
   
-  digitalWrite(ledPin, LOW);   // 熄灭LED
+  digitalWrite(ledPin, LOW);   
   Serial.println("LED OFF");   // 串口输出提示
   delay(1000);                 // 保持1秒
 }
